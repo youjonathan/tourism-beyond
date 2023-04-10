@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* waves opacity top light color : used in your-journey.js*/
+.custom-shape-divider-top-1681093420 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1681093420 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-top-1681093420 .shape-fill {
+  fill: #F5F5F5;
+}
+
+/* waves opacity bottom light color : used in index.js, your-journey.js */
+.custom-shape-divider-bottom-1681077828 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681077828 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-bottom-1681077828 .shape-fill {
+  fill: #f5f5f5;
+}
+
+/* inverted triangle top light color : used in index.js*/
+.custom-shape-divider-top-1681079711 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1681079711 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-top-1681079711 .shape-fill {
+    fill: #f5f5f5;
+}
+
+/* arrow bottom light color : used in about-us.js*/
+.custom-shape-divider-bottom-1681093033 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681093033 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-bottom-1681093033 .shape-fill {
+  fill: #F5F5F5;
+}
