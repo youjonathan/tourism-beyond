@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import Layout from "@/components/Layout";
 import PageLoadEffect from "@/components/PageLoadEffect";
+import { IconContext } from "react-icons";
+import { RiPlantFill } from "react-icons/ri";
 
 import workers from "../../public/about-us/workers.webp";
 import story from "../../public/about-us/story.webp";
@@ -124,6 +126,64 @@ const aboutUs = () => {
             </div>
           </div>
         </Layout>
+        <div>
+          <div className="relative">
+            <div class="custom-shape-divider-bottom-1681281558">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <Layout className="bg-mygray">
+            <div className="w-full px-8 items-center justify-center">
+              <div>
+                <div className="flex flex-row items-center justify-center pb-4">
+                  <h3 className="font-playfair font-bold text-3xl text-center  pr-2">
+                    The Environment and Us
+                  </h3>
+                  <IconContext.Provider
+                    value={{
+                      color: "green",
+                      size: "2em",
+                    }}
+                  >
+                    <RiPlantFill value={{ className: "plant-icon" }} />
+                  </IconContext.Provider>
+                </div>
+                <p>
+                  As we embark on the exciting journey of space tourism, it is
+                  essential to consider the impact of our actions on the
+                  environment. At Tourism Beyond, we believe that we have a
+                  responsibility to not only provide our customers with an
+                  unforgettable experience but also to protect the planet we
+                  call home. We strive to minimize our environmental impact by
+                  implementing sustainable practices in all aspects of our
+                  operations.
+                </p>
+                <br />
+                <p>
+                  Our commitment to the environment starts with our spacecraft
+                  design and fuel choices, which prioritize efficiency and low
+                  emissions. We also work with local communities and
+                  conservation organizations to ensure that our tourism
+                  activities do not harm natural habitats or wildlife. At
+                  Tourism Beyond, we believe that responsible space tourism can
+                  be a catalyst for positive change on Earth, inspiring a
+                  greater appreciation for our planet and motivating people to
+                  protect it for generations to come.
+                </p>
+              </div>
+            </div>
+          </Layout>
+        </div>
       </main>
     </>
   );
