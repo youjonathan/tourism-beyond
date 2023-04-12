@@ -77,6 +77,7 @@ const aboutUs = () => {
                 src={story}
                 alt="/"
                 className="w-full object-cover rounded-2xl"
+                placeholder="blur"
               />
             </div>
             <div className="p-10">
@@ -118,6 +119,7 @@ const aboutUs = () => {
                 src={mission}
                 alt="/"
                 className="w-full object-cover rounded-2xl"
+                placeholder="blur"
               />
             </div>
           </div>

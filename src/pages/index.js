@@ -106,6 +106,7 @@ export default function Home() {
                 src={engineer}
                 alt="/"
                 className="w-full object-cover rounded-2xl"
+                placeholder="blur"
               />
             </div>
           </div>
@@ -115,6 +116,7 @@ export default function Home() {
                 src={astronaut}
                 alt="/"
                 className="w-full object-cover rounded-2xl"
+                placeholder="blur"
               />
             </div>
             <div className="p-10">
