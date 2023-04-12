@@ -19,8 +19,8 @@ const aboutUs = () => {
         <meta name="description" content="any description" />
       </Head>
       <PageLoadEffect />
-      <main className="flex w-full flex-col items-center justify-center">
-        <div className="relative w-full h-screen">
+      <main>
+        <div className="relative w-full h-[80vh] sm:h-screen">
           <div className="z-[-1]">
             <Image
               priority
@@ -31,17 +31,17 @@ const aboutUs = () => {
               className="object-cover object-center"
             />
           </div>
-          <div className="relative h-full flex items-center justify-center text-light">
+          <div className="relative h-full flex flex-col sm:hidden items-center justify-center text-light">
             <motion.h2
-              className="font-dancing text-6xl pr-16"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              className="font-dancing text-3xl sm:pr-4 md:pr-8 lg:pr-16"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
             >
               we are
             </motion.h2>
             <motion.h1
-              className="font-playfair font-black text-[12rem] uppercase"
+              className="font-playfair font-black text-7xl uppercase"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.3, duration: 0.8 }}
@@ -49,7 +49,33 @@ const aboutUs = () => {
               here
             </motion.h1>
             <motion.h2
-              className="font-dancing text-6xl pl-16"
+              className="font-dancing text-3xl sm:pl-4 md:pl-8 lg:pl-16"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2.1, duration: 0.5 }}
+            >
+              for you
+            </motion.h2>
+          </div>
+          <div className="relative h-full hidden sm:flex items-center justify-center text-light">
+            <motion.h2
+              className="font-dancing sm:text-3xl md:text-4xl lg:text-6xl sm:pr-4 md:pr-8 lg:pr-16"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+            >
+              we are
+            </motion.h2>
+            <motion.h1
+              className="font-playfair font-black sm:text-[9rem] md:text-[10rem] lg:text-[12rem] uppercase"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1.3, duration: 0.8 }}
+            >
+              here
+            </motion.h1>
+            <motion.h2
+              className="font-dancing sm:text-3xl md:text-4xl lg:text-6xl sm:pl-4 md:pl-8 lg:pl-16"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 2.1, duration: 0.5 }}
@@ -57,7 +83,7 @@ const aboutUs = () => {
               for you
             </motion.h2>
           </div>
-          <div className="relative">
+          <div className="hidden relative">
             <div class="custom-shape-divider-bottom-1681093033">
               <svg
                 data-name="Layer 1"
@@ -73,8 +99,78 @@ const aboutUs = () => {
             </div>
           </div>
         </div>
-        <Layout className="pt-28">
-          <div className="w-full px-8 pb-12 grid grid-cols-2 items-center justify-items-center">
+        <Layout className="px-8 xl:px-32 py-14 md:py-20 xl:py-32">
+          <div className="w-full md:hidden flex flex-col items-center justify-items-center">
+            <div className="pb-6">
+              <h3 className="font-playfair font-bold text-3xl text-center pb-4">
+                Our Story
+              </h3>
+              <p>
+                Tourism Beyond was born out of a passion for space exploration
+                and a desire to make it accessible to everyone. Our founders, a
+                group of experienced engineers and space enthusiasts, began the
+                company with the goal of making space travel a reality for
+                people from all walks of life. We’ve worked tirelessly to design
+                and develop state-of-the-art spacecrafts, and have implemented
+                rigorous safety procedures to ensure a comfortable and safe
+                journey for our passengers. We are proud to offer a space
+                tourism experience that is truly out of this world.
+              </p>
+            </div>
+            <div className="pt-6">
+              <h3 className="font-playfair font-bold text-3xl text-center pb-4">
+                Our Mission​
+              </h3>
+              <p>
+                Our mission is to democratize access to space and to inspire the
+                next generation of explorers. We strive to provide opportunities
+                for scientific research, technology development and space
+                exploration through our space tourism services. We believe that
+                space travel is not just a privilege for the few, but a
+                necessary step in the advancement of humanity. We are committed
+                to making space travel accessible, safe and memorable for all,
+                and to inspire people to look beyond the limits of Earth and to
+                dream of the possibilities of space.
+              </p>
+            </div>
+            <div className="sm:hidden flex flex-col items-center">
+              <div className="w-3/4 py-8">
+                <Image
+                  src={story}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+              <div className="w-3/4">
+                <Image
+                  src={mission}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+            <div className="hidden sm:flex flex-row md:hidden pt-10 items-center">
+              <div className="w-1/2 px-4">
+                <Image
+                  src={story}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+              <div className="w-1/2 px-4">
+                <Image
+                  src={mission}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:px-8 md:pb-8 lg:pb-12 hidden md:grid grid-cols-2 items-center justify-items-center">
             <div className="p-8 w-[75%] rounded-2xl border-2 border-solid border-dark bg-mygray drop-shadow-xl">
               <Image
                 src={story}
@@ -100,7 +196,7 @@ const aboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="w-full px-8 py-12 grid grid-cols-2 items-center justify-items-center">
+          <div className="w-full lg:px-8 md:pt-8 lg:pt-12 hidden md:grid grid-cols-2 items-center justify-items-center">
             <div className="p-10">
               <h3 className="font-playfair font-bold text-3xl text-center pb-4">
                 Our Mission​
@@ -143,21 +239,23 @@ const aboutUs = () => {
               </svg>
             </div>
           </div>
-          <Layout className="bg-mygray">
-            <div className="w-full px-8 items-center justify-center">
+          <Layout className="bg-mygray px-4 sm:px-8 py-12 lg:p-32 lg:py-16">
+            <div className="w-full px-2 lg:px-8 items-center justify-center">
               <div>
-                <div className="flex flex-row items-center justify-center pb-4">
-                  <h3 className="font-playfair font-bold text-3xl text-center  pr-2">
+                <div className="flex flex-row items-center justify-center pb-8 sm:pb-4">
+                  <h3 className="font-playfair font-bold text-3xl text-center sm:pr-2">
                     The Environment and Us
                   </h3>
-                  <IconContext.Provider
-                    value={{
-                      color: "green",
-                      size: "2em",
-                    }}
-                  >
-                    <RiPlantFill value={{ className: "plant-icon" }} />
-                  </IconContext.Provider>
+                  <div className="hidden sm:flex">
+                    <IconContext.Provider
+                      value={{
+                        color: "green",
+                        size: "2em",
+                      }}
+                    >
+                      <RiPlantFill value={{ className: "plant-icon" }} />
+                    </IconContext.Provider>
+                  </div>
                 </div>
                 <p>
                   As we embark on the exciting journey of space tourism, it is
