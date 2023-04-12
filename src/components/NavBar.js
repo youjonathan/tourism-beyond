@@ -82,7 +82,7 @@ const NavBar = () => {
           </Link>
         </motion.div>
       </div>
-      <nav className="hidden md:flex">
+      <nav className="hidden lg:flex">
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about-us" title="About Us" className="mx-4" />
         <CustomLink
@@ -97,7 +97,7 @@ const NavBar = () => {
         />
         <CustomLink href="/references" title="References" className="ml-4" />
       </nav>
-      <nav className="items-center justify-center flex-wrap hidden md:flex">
+      <nav className="items-center justify-center flex-wrap hidden lg:flex">
         <motion.div
           whileHover={{
             scale: 1.15,
@@ -114,7 +114,7 @@ const NavBar = () => {
         </motion.div>
       </nav>
       <button
-        className="flex flex-col justify-center items-center md:hidden"
+        className="flex flex-col justify-center items-center lg:hidden"
         onClick={handleClick}
       >
         <span
@@ -137,7 +137,7 @@ const NavBar = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-[70vw] z-30 bg-light/90 rounded-lg backdrop-blur-md py-16 md:hidden
+          className="min-w-[70vw] z-30 bg-light/90 rounded-lg backdrop-blur-md py-16 lg:hidden
         flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           <nav className="flex flex-col items-center justify-center">
