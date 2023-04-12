@@ -68,7 +68,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-fill px-32 py-3 font-medium flex items-center justify-between bg-light">
+    <header className="w-fill px-10 lg:px-32 2xl:px-96 py-6 sm:py-3 lg:py-5 font-medium flex items-center justify-between bg-light">
       <div className="w-[100px] h-auto">
         <motion.div
           whileHover={{
@@ -137,7 +137,7 @@ const NavBar = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-[60vw] z-30 bg-light/90 rounded-lg backdrop-blur-md py-32
+          className="min-w-[70vw] z-30 bg-light/90 rounded-lg backdrop-blur-md py-16 md:hidden
         flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           <nav className="flex flex-col items-center justify-center">
@@ -171,6 +171,26 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
+            <button
+              className="mt-8 flex flex-col justify-center items-center"
+              onClick={handleClick}
+            >
+              <span
+                className={`bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                  isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+                }`}
+              ></span>
+              <span
+                className={`bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+                  isOpen ? "opacity-0" : "opactiy-100"
+                }`}
+              ></span>
+              <span
+                className={`bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                  isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+                }`}
+              ></span>
+            </button>
           </nav>
         </motion.div>
       ) : null}
