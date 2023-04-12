@@ -2,6 +2,7 @@ import Head from "next/head";
 import { BsGithub } from "react-icons/bs";
 
 import PageLoadEffect from "@/components/PageLoadEffect";
+import Link from "next/link";
 
 const LinkArrow = ({ className, ...rest }) => (
   <svg
@@ -38,9 +39,11 @@ const references = () => {
           <h2 className="flex flex-row font-playfair font-bold text-2xl items-center">
             Source Code <BsGithub className="ml-2" />
           </h2>
-          <p className="pt-2 pb-6">Filler text</p>
-          <h2 className="font-playfair font-bold text-2xl">Design Process</h2>
-          <p className="pt-2 pb-6">Filler text</p>
+          <Link href="https://github.com/youjonathan/tourism-beyond">
+            <p className="pt-2 pb-6">
+              https://github.com/youjonathan/tourism-beyond
+            </p>
+          </Link>
           <h2 className="font-playfair font-bold text-2xl">Image Citations</h2>
           <p className="pt-2 pb-6">Filler text</p>
           <h2 className="font-playfair font-bold text-2xl">
