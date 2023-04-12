@@ -52,12 +52,20 @@ export default function Home() {
               deletionSpeed={{ type: "keyStrokeDelayInMs", value: 100 }}
               className="font-playfair font-black uppercase text-[7rem] text-light pb-20 "
             />
-            <Link
-              href="/your-journey"
-              className="text-light text-md px-8 py-4 border-2 rounded-lg"
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
             >
-              See more
-            </Link>
+              <Link
+                href="/your-journey"
+                className="text-light text-md px-8 py-4 border-2 rounded-lg"
+              >
+                See more
+              </Link>
+            </motion.div>
           </div>
           <div className="relative">
             <div class="custom-shape-divider-bottom-1681077828">
@@ -172,12 +180,20 @@ export default function Home() {
                 rovers
               </motion.h1>
             </div>
-            <Link
-              href="/space-vehicles"
-              className="text-light text-md px-8 py-4 border-2 rounded-lg"
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
             >
-              Go now
-            </Link>
+              <Link
+                href="/space-vehicles"
+                className="text-light text-md px-8 py-4 border-2 rounded-lg"
+              >
+                Go now
+              </Link>
+            </motion.div>
           </div>
           <div class="custom-shape-divider-top-1681079711">
             <svg

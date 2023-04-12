@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,33 +10,82 @@ const Footer = () => {
     <footer className="w-full min-h-[300px] px-16 bg-dark text-light text-sm">
       <div className="py-8 flex flex-col">
         <div className="py-8 grid grid-cols-3">
-          <div className="flex flex-col text-center">
-            <Link href="/" className="pb-2">
-              Home
-            </Link>
-            <Link href="/about-us" className="py-2">
-              About Us
-            </Link>
-            <Link href="/your-journey" className="py-2">
-              Your Journey
-            </Link>
-            <Link href="/space-vehicles" className="py-2">
-              Space Vehicles
-            </Link>
-            <Link href="/references" className="pt-2">
-              References
-            </Link>
+          <div className="text-center">
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+              className="pb-2 hover:text-primary"
+            >
+              <Link href="/">Home</Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+              className="py-2 hover:text-primary"
+            >
+              <Link href="/about-us">About Us</Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+              className="py-2 hover:text-primary"
+            >
+              <Link href="/your-journey">Your Journey</Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+              className="py-2 hover:text-primary"
+            >
+              <Link href="/space-vehicles">Space Vehicles</Link>
+            </motion.div>
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+              className="pt-2 hover:text-primary"
+            >
+              <Link href="/references">References</Link>
+            </motion.div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <div className="w-[150px] h-auto pb-5">
+            <motion.div
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+              className="w-[150px] h-auto pb-5"
+            >
               <Link href="/">
                 <Image src={logo} alt="/" priority />
               </Link>
-            </div>
+            </motion.div>
             <div>
-              <Link href="/your-journey" className="font-playfair text-lg">
-                BECOME AN ASTRONAUT
-              </Link>
+              <motion.div
+                whileHover={{
+                  scale: 1.15,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+                className="font-playfair font-semibold text-lg hover:text-primary"
+              >
+                <Link href="/your-journey">BECOME AN ASTRONAUT</Link>
+              </motion.div>
             </div>
           </div>
           <div className="text-center mt-[4.5rem]">

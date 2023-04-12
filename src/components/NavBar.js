@@ -56,12 +56,20 @@ const NavBar = () => {
         <CustomLink href="/references" title="References" className="ml-4" />
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
-        <Link
-          href="/your-journey"
-          className="text-light bg-primary px-5 py-3 text-sm rounded-lg"
+        <motion.div
+          whileHover={{
+            scale: 1.15,
+            transition: { duration: 0.3 },
+          }}
+          whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
         >
-          Learn more
-        </Link>
+          <Link
+            href="/your-journey"
+            className="text-light bg-primary px-5 py-3 text-sm rounded-lg"
+          >
+            Learn more
+          </Link>
+        </motion.div>
       </nav>
     </header>
   );
