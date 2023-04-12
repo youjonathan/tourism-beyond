@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import logo from "../../public/logoBlack.png";
@@ -33,12 +33,44 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header className="w-fill px-32 py-3 font-medium flex items-center justify-between bg-light">
+      <button
+        className="flex flex-col justify-center items-center lg:hidden"
+        onClick={handleClick}
+      >
+        <span
+          className={`bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+          }`}
+        ></span>
+        <span
+          className={`bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+            isOpen ? "opacity-0" : "opactiy-100"
+          }`}
+        ></span>
+        <span
+          className={`bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+          }`}
+        ></span>
+      </button>
       <div className="w-[100px] h-auto">
-        <Link href="/">
-          <Image src={logo} alt="/" priority />
-        </Link>
+        <motion.div
+          whileHover={{
+            scale: 1.15,
+            transition: { duration: 0.3 },
+          }}
+          whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
+        >
+          <Link href="/">
+            <Image src={logo} alt="/" priority />
+          </Link>
+        </motion.div>
       </div>
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
