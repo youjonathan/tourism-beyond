@@ -33,7 +33,7 @@ export default function Home() {
             />
           </div>
           <div className="relative h-full flex flex-col items-center justify-center">
-            <h3 className="font-dancing lowercase text-5xl tracking-widest text-light pb-2">
+            <h3 className="font-dancing lowercase text-xl md:text-5xl tracking-widest text-light md:pb-2">
               become a[n]
             </h3>
             <TypeAnimation
@@ -51,7 +51,7 @@ export default function Home() {
               wrapper="h1"
               speed={{ type: "keyStrokeDelayInMs", value: 200 }}
               deletionSpeed={{ type: "keyStrokeDelayInMs", value: 100 }}
-              className="font-playfair font-black uppercase text-[7rem] text-light pb-20 "
+              className="font-playfair font-black uppercase text-4xl sm:text-7xl md:text-[7rem] text-light pb-8 sm:pb-16 md:pb-20 "
             />
             <motion.div
               whileHover={{
@@ -62,7 +62,7 @@ export default function Home() {
             >
               <Link
                 href="/your-journey"
-                className="text-light text-md px-8 py-4 border-2 rounded-lg"
+                className="text-light text-xs sm:text-sm px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 border sm:border-2 rounded-lg"
               >
                 See more
               </Link>
@@ -94,8 +94,78 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Layout>
-          <div className="w-full px-8 pb-12 grid grid-cols-2 items-center justify-items-center">
+        <Layout className="px-8 xl:px-32 py-14 md:py-20 xl:py-32">
+          <div className="w-full md:hidden flex flex-col items-center justify-items-center">
+            <div className="pb-6">
+              <h3 className="font-playfair font-bold text-3xl text-center pb-4">
+                Who are we?
+              </h3>
+              <p>
+                Tourism Beyond is a space tourism company that is dedicated to
+                providing an out-of-this-world experience for private
+                individuals. We are a team of passionate and dedicated experts
+                who are committed to making space travel accessible to all. Our
+                team includes experienced pilots, aerospace engineers, and
+                dedicated support staff who are dedicated to ensuring that our
+                customers have an unforgettable experience.
+              </p>
+            </div>
+            <div className="pt-6">
+              <h3 className="font-playfair font-bold text-3xl text-center pb-4">
+                What do we offer?​
+              </h3>
+              <p>
+                Tourism Beyond offers a range of space travel options to suit
+                all preferences and budgets, from suborbital flights that
+                provide a glimpse of the earth from space, to orbital flights
+                that offer a chance to experience weightlessness and see the
+                curvature of our planet, and even lunar excursions that allow
+                you to set foot on the moon. We provide comprehensive training
+                and preparation, as well as post-flight recovery and debriefing
+                services, ensuring that our customers have a safe and reliable
+                journey. With cutting-edge technology and unparalleled customer
+                service, we make space travel accessible to everyone, and take
+                them beyond the typical tourism experience.
+              </p>
+            </div>
+            <div className="sm:hidden flex flex-col items-center">
+              <div className="w-3/4 py-8">
+                <Image
+                  src={engineer}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+              <div className="w-3/4">
+                <Image
+                  src={astronaut}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+            <div className="hidden sm:flex flex-row md:hidden pt-10 items-center">
+              <div className="w-1/2 px-4">
+                <Image
+                  src={engineer}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+              <div className="w-1/2 px-4">
+                <Image
+                  src={astronaut}
+                  alt="/"
+                  className="w-full object-cover rounded-2xl"
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:px-8 md:pb-8 lg:pb-12 hidden md:grid grid-cols-2 items-center justify-items-center">
             <div className="p-10">
               <h3 className="font-playfair font-bold text-3xl text-center pb-4">
                 Who are we?
@@ -119,7 +189,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="w-full px-8 py-12 grid grid-cols-2 items-center justify-items-center">
+          <div className="w-full lg:px-8 md:pt-8 lg:pt-12 hidden md:grid grid-cols-2 items-center justify-items-center">
             <div className="p-8 w-[80%] rounded-2xl border-2 border-solid border-dark bg-mygray drop-shadow-xl">
               <Image
                 src={astronaut}
@@ -148,7 +218,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-        <div className="relative w-full h-[80vh]">
+        <div className="relative w-full h-[60vh] sm:h-[80vh]">
           <div className="z-[-1]">
             <Image
               src={rocket}
@@ -158,25 +228,25 @@ export default function Home() {
               className="object-cover object-top"
             />
           </div>
-          <div className="relative h-full flex flex-col items-center justify-center ">
-            <div className="flex font-playfair font-black text-5xl text-light pb-16">
-              <h1 className="pr-2.5">See our</h1>
+          <div className="relative h-full flex flex-col items-center justify-center">
+            <div className="flex font-playfair font-black text-xl md:text-3xl lg:text-5xl text-light pb-6 md:pb-8 lg:pb-16">
+              <h1 className="pr-1 sm:pr-1.5 md:pr-2.5">See our</h1>
               <motion.h1
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="border-b pb-2"
+                className="border-b md:pb-2"
               >
                 rockets
-              </motion.h1>{" "}
-              <h1 className="px-2.5">and</h1>
+              </motion.h1>
+              <h1 className="px-1 sm:px-1.5 md:px-2.5">and</h1>
               <motion.h1
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                className="border-b pb-2"
+                className="border-b md:pb-2"
               >
                 rovers
               </motion.h1>
@@ -190,7 +260,7 @@ export default function Home() {
             >
               <Link
                 href="/space-vehicles"
-                className="text-light text-md px-8 py-4 border-2 rounded-lg"
+                className="text-light text-xs sm:text-sm lg:text-base px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 border-2 rounded-lg"
               >
                 Go now
               </Link>
