@@ -27,6 +27,7 @@ const aboutUs = () => {
               src={workers}
               alt="/"
               fill
+              placeholder="blur"
               className="object-cover object-center"
             />
           </div>

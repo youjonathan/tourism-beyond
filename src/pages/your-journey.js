@@ -25,6 +25,7 @@ const yourJourney = () => {
               src={hero}
               alt="/"
               fill
+              placeholder="blur"
               className="object-cover object-center"
             />
           </div>

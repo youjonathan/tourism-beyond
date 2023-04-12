@@ -28,6 +28,7 @@ export default function Home() {
               src={galaxy}
               alt="/"
               fill
+              placeholder="blur"
               className="object-cover object-center"
             />
           </div>
@@ -150,10 +151,10 @@ export default function Home() {
         <div className="relative w-full h-[80vh]">
           <div className="z-[-1]">
             <Image
-              priority
               src={rocket}
               alt="/"
               fill
+              placeholder="blur"
               className="object-cover object-top"
             />
           </div>
