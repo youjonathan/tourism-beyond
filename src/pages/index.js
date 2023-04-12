@@ -51,7 +51,7 @@ export default function Home() {
               wrapper="h1"
               speed={{ type: "keyStrokeDelayInMs", value: 200 }}
               deletionSpeed={{ type: "keyStrokeDelayInMs", value: 100 }}
-              className="font-playfair font-black uppercase text-4xl sm:text-7xl md:text-[7rem] text-light pb-8 sm:pb-16 md:pb-20 "
+              className="font-playfair font-black uppercase text-4xl sm:text-7xl md:text-[6.5rem] text-light pb-8 sm:pb-16 md:pb-20 "
             />
             <motion.div
               whileHover={{
