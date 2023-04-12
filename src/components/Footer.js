@@ -88,8 +88,11 @@ const Footer = () => {
               </motion.div>
             </div>
           </div>
-          <div className="text-center mt-[4.5rem]">
+          <div className="flex flex-col text-center justify-center">
             <p>Webmaster Team 2111_901</p>
+            <p>Individual #1: 2111-010</p>
+            <p>Individual #2: 2111-009</p>
+            <p>Individual #3: 2111-005</p>
           </div>
         </div>
         <div className="pt-8 text-center">
