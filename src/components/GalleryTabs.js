@@ -156,12 +156,12 @@ const GalleryTabs = () => {
               The LM was a crucial component of the Apollo program, as it
               allowed astronauts to land on the moon and explore its surface.
               The first successful moon landing was achieved on July 20, 1969,
-              when astronauts Neil Armstrong and Edwin "Buzz" Aldrin landed the
+              when astronauts Neil Armstrong and Edwin &#34;Buzz&#34; Aldrin landed the
               LM on the surface of the moon. The LM was also used for five
               additional successful moon landings during the Apollo program,
               with the last landing taking place in 1972. The LM was
               instrumental in allowing astronauts to conduct scientific
-              experiments, collect samples, and explore the moon's surface.
+              experiments, collect samples, and explore the moon&#39;s surface.
             </p>
             <br />
             <p>
@@ -169,9 +169,9 @@ const GalleryTabs = () => {
               rocket, which was the largest and most powerful rocket ever built.
               The LM was stored in the Lunar Module Adapter (LMA) during the
               launch phase, and then separated from the CM in lunar orbit. Once
-              on the surface of the moon, the LM's landing gear was deployed,
+              on the surface of the moon, the LM&#39;s landing gear was deployed,
               and the descent stage used its rocket engines to slow the
-              spacecraft's descent to the surface. After landing, the ascent
+              spacecraft&#39;s descent to the surface. After landing, the ascent
               stage was used to launch the spacecraft back into lunar orbit,
               where it docked with the CM for the return journey to Earth.
             </p>
@@ -179,7 +179,7 @@ const GalleryTabs = () => {
             <p>
               The development of the LM was a remarkable achievement in
               engineering and technology, requiring innovative solutions to
-              overcome the challenges of landing on the moon. The LM's design
+              overcome the challenges of landing on the moon. The LM&#39;s design
               was a result of intense research, development, and testing, with
               numerous setbacks and challenges along the way. The success of the
               LM and the Apollo program as a whole demonstrated the power of
@@ -201,7 +201,7 @@ const GalleryTabs = () => {
               and is designed to land back on Earth after launch so that it can
               be reused. The second stage, or upper stage, is powered by a
               single Merlin engine. The rocket is also equipped with grid fins
-              and landing legs that assist with the first stage's landing back
+              and landing legs that assist with the first stage&#39;s landing back
               to Earth.
             </p>
             <br />
@@ -211,7 +211,7 @@ const GalleryTabs = () => {
               first privately-funded spacecraft to reach orbit, and the first
               privately-funded spacecraft to dock at the ISS. Additionally,
               Falcon 9 has been used to launch several Starlink satellites to
-              low Earth orbit, as part of SpaceX's satellite internet project.
+              low Earth orbit, as part of SpaceX&#39;s satellite internet project.
             </p>
             <br />
             <p>
@@ -287,7 +287,7 @@ const GalleryTabs = () => {
             <br />
             <p>
               The Falcon Heavy is composed of three Falcon 9 first-stage cores,
-              which are strapped together to form the rocket's first stage. The
+              which are strapped together to form the rocket&#39;s first stage. The
               second stage is a single Falcon 9 upper stage. The rocket also has
               reusable landing legs which allow the first stage cores to land
               back on Earth after launch, so that they can be used again.
@@ -304,7 +304,7 @@ const GalleryTabs = () => {
             <br />
             <p>
               Overall, the Falcon Heavy is considered a significant step forward
-              in SpaceX's goal of making space travel more affordable and
+              in SpaceX&#39;s goal of making space travel more affordable and
               accessible.
             </p>
           </Tab.Panel>
@@ -329,7 +329,7 @@ const GalleryTabs = () => {
               The Delta IV Heavy has been used to launch a variety of payloads,
               including government and military satellites, deep space probes,
               and commercial payloads. Some of the notable missions include the
-              launch of NASA's Parker Solar Probe to study the Sun's corona, the
+              launch of NASA&#39;s Parker Solar Probe to study the Sun&#39;s corona, the
               launch of the NROL-37 reconnaissance satellite for the National
               Reconnaissance Office, and the launch of the WGS-9 military
               communications satellite for the US Air Force.
@@ -337,8 +337,8 @@ const GalleryTabs = () => {
             <br />
             <p>
               The Delta IV Heavy is considered a reliable and versatile launch
-              vehicle, with a successful track record of launches. However, it's
-              considered less cost-effective than competitors like SpaceX's
+              vehicle, with a successful track record of launches. However, it&#39;s
+              considered less cost-effective than competitors like SpaceX&#39;s
               Falcon Heavy, and ULA has announced plans to retire the vehicle in
               the future.
             </p>
@@ -361,7 +361,7 @@ const GalleryTabs = () => {
               the spacecraft and was used for re-entry and landing. The
               Instrumentation/Propulsion Module was located at the rear of the
               spacecraft and provided propulsion for the spacecraft, as well as
-              housing the spacecraft's systems.
+              housing the spacecraft&#39;s systems.
             </p>
             <br />
             <p>
@@ -382,7 +382,7 @@ const GalleryTabs = () => {
           </Tab.Panel>
           <Tab.Panel>
             <p>
-              Bangabandhu Satellite-1 is Bangladesh's first-ever geostationary
+              Bangabandhu Satellite-1 is Bangladesh&#39;s first-ever geostationary
               communications satellite. The satellite was launched on May 11,
               2018, aboard a SpaceX Falcon 9 rocket from the Kennedy Space
               Center in Florida, USA.
@@ -410,10 +410,10 @@ const GalleryTabs = () => {
             <p>
               The successful launch and deployment of Bangabandhu Satellite-1 is
               considered a major milestone for Bangladesh, as it greatly
-              enhances the country's ability to access communication and
+              enhances the country&#39;s ability to access communication and
               broadcasting services, and has the potential to spur economic
               growth and development. It also marks a significant step forward
-              in the country's space program, which has been rapidly expanding
+              in the country&#39;s space program, which has been rapidly expanding
               in recent years.
             </p>
           </Tab.Panel>
@@ -459,7 +459,7 @@ const GalleryTabs = () => {
           </Tab.Panel>
           <Tab.Panel>
             <p>
-              The Space Shuttle Columbia (STS-1) was the first orbiter of NASA's
+              The Space Shuttle Columbia (STS-1) was the first orbiter of NASA&#39;s
               Space Shuttle program. It was built by Rockwell International (now
               Boeing) and was first launched on April 12, 1981. Columbia was the
               first reusable manned spacecraft, and it was used for 28 missions
@@ -483,24 +483,24 @@ const GalleryTabs = () => {
               (STS-1), the first spacewalk from a Space Shuttle (STS-6), and the
               first American woman astronaut to fly in space (STS-35). Columbia
               also flew several scientific missions, including the deployment of
-              the Hubble Space Telescope (STS-31) and the study of the Earth's
+              the Hubble Space Telescope (STS-31) and the study of the Earth&#39;s
               atmosphere (STS-107).
             </p>
             <br />
             <p>
-              Unfortunately, Columbia's final mission (STS-107) ended in tragedy
+              Unfortunately, Columbia&#39;s final mission (STS-107) ended in tragedy
               when the orbiter broke apart during re-entry on February 1, 2003,
               due to a damaged wing leading edge caused by a piece of foam
               insulation that broke off during launch. All seven crew members
               were lost in the accident. The Columbia accident was a significant
-              setback for NASA's Space Shuttle program, and it led to the
+              setback for NASA&#39;s Space Shuttle program, and it led to the
               grounding of the Shuttle fleet for over two years while the
               accident was investigated and safety measures were implemented.
             </p>
           </Tab.Panel>
           <Tab.Panel>
             <p>
-              The Saturn V was a heavy-lift launch vehicle used by NASA's Apollo
+              The Saturn V was a heavy-lift launch vehicle used by NASA&#39;s Apollo
               program during the 1960s and 1970s. It was developed by the
               Marshall Space Flight Center and built by the Boeing-led team of
               companies, which included North American Aviation, Douglas
@@ -532,7 +532,7 @@ const GalleryTabs = () => {
             <p>
               The Saturn V rocket was considered an engineering marvel, and its
               success in launching the Apollo spacecraft to the Moon was a
-              significant achievement in human history. The Saturn V's powerful
+              significant achievement in human history. The Saturn V&#39;s powerful
               engines and large fuel capacity allowed it to lift large payloads
               into orbit, and its reliability and success rate made it one of
               the most successful rockets in history.
