@@ -1,15 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { Gallery } from "react-grid-gallery";
-import { Tab } from "@mui/material";
 
-import Layout from "@/components/Layout";
 import PageLoadEffect from "@/components/PageLoadEffect";
-
-import workers from "../../public/about-us/workers.webp";
-import story from "../../public/about-us/story.webp";
-import mission from "../../public/about-us/mission.webp";
+import AnimatedText from "@/components/AnimatedText";
+import Gallery from "@/components/Gallery";
+import GalleryTabs from "@/components/GalleryTabs";
 
 const spaceVehicles = () => {
   return (
@@ -20,14 +14,27 @@ const spaceVehicles = () => {
       </Head>
       <PageLoadEffect />
       <main className="bg-mygray w-full flex flex-col items-center justify-center">
-        <div className="text-center py-16">
-          <h1 className="font-playfair font-black text-6xl pb-8">
-            Our Rockets and Rovers
-          </h1>
+        <div className="text-center pt-12 pb-6">
+          <AnimatedText
+            text="Our Rockets and Rovers"
+            className="font-playfair font-black text-5xl pb-4"
+          />
           <p>
-            Click on any of the images in the gallery below to see its name!
-            Scroll down to see more information about each specific one.
+            Check out our rockets and space vehicles in the gallery below!
+            Scroll down to read more about each specific one.
           </p>
+          <p className="italic px-64 pt-4">
+            Disclaimer: these rockets are borrowed from other sources and serve
+            as a demonstration of the service we would provide. We do not
+            guarantee nor claim that your experience will include any of these
+            space vehicles.
+          </p>
+        </div>
+        <div className="w-3/4 pb-20">
+          <Gallery />
+        </div>
+        <div className="w-5/6 pb-20">
+          <GalleryTabs />
         </div>
       </main>
     </>
