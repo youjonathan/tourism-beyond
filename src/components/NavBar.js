@@ -36,7 +36,9 @@ const NavBar = () => {
   return (
     <header className="w-fill px-32 py-3 font-medium flex items-center justify-between bg-light">
       <div className="w-[100px] h-auto">
-        <Link href="/"><Image src={logo} alt="/" /></Link>
+        <Link href="/">
+          <Image src={logo} alt="/" priority />
+        </Link>
       </div>
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />

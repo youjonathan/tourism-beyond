@@ -11,18 +11,32 @@ const Footer = () => {
       <div className="py-8 flex flex-col">
         <div className="py-8 grid grid-cols-3">
           <div className="flex flex-col text-center">
-            <Link href="/" className="pb-2">Home</Link>
-            <Link href="/about-us" className="py-2">About Us</Link>
-            <Link href="/your-journey" className="py-2">Your Journey</Link>
-            <Link href="/space-vehicles" className="py-2">Space Vehicles</Link>
-            <Link href="/references" className="pt-2">References</Link>
+            <Link href="/" className="pb-2">
+              Home
+            </Link>
+            <Link href="/about-us" className="py-2">
+              About Us
+            </Link>
+            <Link href="/your-journey" className="py-2">
+              Your Journey
+            </Link>
+            <Link href="/space-vehicles" className="py-2">
+              Space Vehicles
+            </Link>
+            <Link href="/references" className="pt-2">
+              References
+            </Link>
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="w-[150px] h-auto pb-5">
-              <Link href="/"><Image src={logo} alt="/" /></Link>
+              <Link href="/">
+                <Image src={logo} alt="/" priority />
+              </Link>
             </div>
             <div>
-              <Link href="/your-journey" className="font-playfair text-lg">BECOME AN ASTRONAUT</Link>
+              <Link href="/your-journey" className="font-playfair text-lg">
+                BECOME AN ASTRONAUT
+              </Link>
             </div>
           </div>
           <div className="text-center mt-[4.5rem]">
