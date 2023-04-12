@@ -1,13 +1,28 @@
 import Head from "next/head";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { BsGithub } from "react-icons/bs";
 
-import Layout from "@/components/Layout";
 import PageLoadEffect from "@/components/PageLoadEffect";
 
-import workers from "../../public/about-us/workers.webp";
-import story from "../../public/about-us/story.webp";
-import mission from "../../public/about-us/mission.webp";
+const LinkArrow = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path fill="none" d="M0 0h24v24H0z" />
+    <path
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
+    />
+  </svg>
+);
 
 const references = () => {
   return (
@@ -17,9 +32,27 @@ const references = () => {
         <meta name="description" content="any description" />
       </Head>
       <PageLoadEffect />
-      <main className="bg-mygray w-full flex flex-col">
-        <div className="items-start py-16 px-24">
-          <h1 className="font-playfair font-black text-6xl">References</h1>
+      <main className="bg-mygray w-full flex flex-col items-start py-16 px-24">
+        <h1 className="font-playfair font-black text-6xl pb-16">References</h1>
+        <div>
+          <h2 className="flex flex-row font-playfair font-bold text-2xl items-center">
+            Source Code <BsGithub className="ml-2" />
+          </h2>
+          <p className="pt-2 pb-6">Filler text</p>
+          <h2 className="font-playfair font-bold text-2xl">Design Process</h2>
+          <p className="pt-2 pb-6">Filler text</p>
+          <h2 className="font-playfair font-bold text-2xl">Image Citations</h2>
+          <p className="pt-2 pb-6">Filler text</p>
+          <h2 className="font-playfair font-bold text-2xl">
+            Research Documentation (APA)
+          </h2>
+          <p className="pt-2 pb-6">Filler text</p>
+          <h2 className="font-playfair font-bold text-2xl">Plan of Work Log</h2>
+          <p className="pt-2 pb-6">Download here</p>
+          <h2 className="font-playfair font-bold text-2xl">
+            Student Copyright Checklist
+          </h2>
+          <p className="pt-2 pb-6">Download here</p>
         </div>
       </main>
     </>
