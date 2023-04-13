@@ -4,6 +4,7 @@ import PageLoadEffect from "@/components/PageLoadEffect";
 import AnimatedText from "@/components/AnimatedText";
 import Gallery from "@/components/Gallery";
 import GalleryTabs from "@/components/GalleryTabs";
+import Accordion from "@/components/GalleryAccordion";
 
 const spaceVehicles = () => {
   return (
@@ -14,16 +15,16 @@ const spaceVehicles = () => {
       </Head>
       <PageLoadEffect />
       <main className="bg-mygray w-full flex flex-col items-center justify-center">
-        <div className="text-center pt-12 pb-6">
+        <div className="w-5/6 md:w-3/4 text-center pt-12 pb-6">
           <AnimatedText
             text="Our Rockets and Rovers"
-            className="font-playfair font-black text-5xl pb-4"
+            className="font-playfair font-black text-4xl sm:text-5xl pb-4"
           />
           <p>
             Check out our rockets and space vehicles in the gallery below!
             Scroll down to read more about each specific one.
           </p>
-          <p className="italic px-64 pt-4">
+          <p className="italic">
             Disclaimer: these rockets are borrowed from other sources and serve
             as a demonstration of the service we would provide. We do not
             guarantee nor claim that your experience will include any of these
@@ -35,6 +36,7 @@ const spaceVehicles = () => {
         </div>
         <div className="w-5/6 pb-20">
           <GalleryTabs />
+          <Accordion />
         </div>
       </main>
     </>

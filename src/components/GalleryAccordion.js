@@ -1,145 +1,31 @@
-import React from "react";
-import { Fragment } from "react";
-import { Tab } from "@headlessui/react";
+import React, { useState } from "react";
 
-const GalleryTabs = () => {
+const Accordion = () => {
+  const [isActive1, setIsActive1] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
+  const [isActive4, setIsActive4] = useState(false);
+  const [isActive5, setIsActive5] = useState(false);
+  const [isActive6, setIsActive6] = useState(false);
+  const [isActive7, setIsActive7] = useState(false);
+  const [isActive8, setIsActive8] = useState(false);
+  const [isActive9, setIsActive9] = useState(false);
+  const [isActive10, setIsActive10] = useState(false);
+
   return (
-    <div className="hidden md:flex flex-row">
-      <Tab.Group vertical>
-        <Tab.List className="font-playfair font-black text-xl flex flex-col">
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Apollo Lunar Module
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Falcon 9
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Dragon Vertical
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Falcon Heavy
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Delta-IV Heavy
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Soyuz TMA-16
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Bangabandhu Satellite-1
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Lunar Roving Vehicle
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Space Shuttle Columbia
-              </h2>
-            )}
-          </Tab>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <h2
-                className={
-                  selected
-                    ? "border border-r-0 border-light text-primary min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                    : "min-w-[8rem] lg:min-w-[24rem] pl-4 pr-8 lg:pr-16 py-3"
-                }
-              >
-                Saturn V
-              </h2>
-            )}
-          </Tab>
-        </Tab.List>
-        <Tab.Panels className="w-full border p-8">
-          <Tab.Panel>
+    <div className="flex flex-col md:hidden">
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive1(!isActive1)}
+        >
+          <div className={`${isActive1 ? "text-primary" : "text-dark"}`}>
+            <h2>Apollo Lunar Module</h2>
+          </div>
+          <div>{isActive1 ? "-" : "+"}</div>
+        </div>
+        {isActive1 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Apollo Lunar Module (LM) was a spacecraft developed by NASA as
               part of the Apollo program. The LM was designed to carry two
@@ -187,8 +73,21 @@ const GalleryTabs = () => {
               of human ingenuity and the determination to push the boundaries of
               what was possible in space exploration.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive2(!isActive2)}
+        >
+          <div className={`${isActive2 ? "text-primary" : "text-dark"}`}>
+            <h2>Falcon 9</h2>
+          </div>
+          <div>{isActive2 ? "-" : "+"}</div>
+        </div>
+        {isActive2 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Falcon 9 is a reusable, two-stage-to-orbit medium-lift launch
               vehicle designed and manufactured by SpaceX. It is used to launch
@@ -222,8 +121,21 @@ const GalleryTabs = () => {
               landings. Its reusability and relatively low cost have also made
               it a popular choice among satellite operators and other customers.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive3(!isActive3)}
+        >
+          <div className={`${isActive3 ? "text-primary" : "text-dark"}`}>
+            <h2>Dragon Vertical</h2>
+          </div>
+          <div>{isActive3 ? "-" : "+"}</div>
+        </div>
+        {isActive3 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Dragon spacecraft is a pressurized capsule designed and built
               by SpaceX to transport cargo and crew members to and from low
@@ -275,8 +187,21 @@ const GalleryTabs = () => {
               has revolutionized space exploration and has opened up new
               possibilities for scientific research and exploration in space.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive4(!isActive4)}
+        >
+          <div className={`${isActive4 ? "text-primary" : "text-dark"}`}>
+            <h2>Falcon Heavy</h2>
+          </div>
+          <div>{isActive4 ? "-" : "+"}</div>
+        </div>
+        {isActive4 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The SpaceX Falcon Heavy is a reusable heavy-lift launch vehicle
               developed and manufactured by SpaceX. The rocket is designed to
@@ -309,8 +234,21 @@ const GalleryTabs = () => {
               in SpaceX&#39;s goal of making space travel more affordable and
               accessible.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive5(!isActive5)}
+        >
+          <div className={`${isActive5 ? "text-primary" : "text-dark"}`}>
+            <h2>Delta-IV Heavy</h2>
+          </div>
+          <div>{isActive5 ? "-" : "+"}</div>
+        </div>
+        {isActive5 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Delta IV Heavy is a heavy-lift launch vehicle developed by
               United Launch Alliance (ULA), a joint venture between Lockheed
@@ -344,8 +282,21 @@ const GalleryTabs = () => {
               SpaceX&#39;s Falcon Heavy, and ULA has announced plans to retire
               the vehicle in the future.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive6(!isActive6)}
+        >
+          <div className={`${isActive6 ? "text-primary" : "text-dark"}`}>
+            <h2>Soyuz TMA-16</h2>
+          </div>
+          <div>{isActive6 ? "-" : "+"}</div>
+        </div>
+        {isActive6 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Soyuz TMA-16 was a spacecraft of the Soyuz TMA series, which
               is used to transport crew to and from the International Space
@@ -381,8 +332,21 @@ const GalleryTabs = () => {
               is considered a reliable and proven spacecraft, and continues to
               be a mainstay of crewed spaceflight today
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive7(!isActive7)}
+        >
+          <div className={`${isActive7 ? "text-primary" : "text-dark"}`}>
+            <h2>Bangabandhu Satellite-1</h2>
+          </div>
+          <div>{isActive7 ? "-" : "+"}</div>
+        </div>
+        {isActive7 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               Bangabandhu Satellite-1 is Bangladesh&#39;s first-ever
               geostationary communications satellite. The satellite was launched
@@ -418,8 +382,21 @@ const GalleryTabs = () => {
               in the country&#39;s space program, which has been rapidly
               expanding in recent years.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive8(!isActive8)}
+        >
+          <div className={`${isActive8 ? "text-primary" : "text-dark"}`}>
+            <h2>Lunar Roving Vehicle</h2>
+          </div>
+          <div>{isActive8 ? "-" : "+"}</div>
+        </div>
+        {isActive8 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Apollo 17 Lunar Roving Vehicle (LRV) was a battery-powered
               four-wheeled rover used on the Moon during the Apollo 17 mission,
@@ -458,8 +435,21 @@ const GalleryTabs = () => {
               program. It remains the only vehicle driven on another celestial
               body.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive9(!isActive9)}
+        >
+          <div className={`${isActive9 ? "text-primary" : "text-dark"}`}>
+            <h2>Space Shuttle Columbia</h2>
+          </div>
+          <div>{isActive9 ? "-" : "+"}</div>
+        </div>
+        {isActive9 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Space Shuttle Columbia (STS-1) was the first orbiter of
               NASA&#39;s Space Shuttle program. It was built by Rockwell
@@ -500,8 +490,21 @@ const GalleryTabs = () => {
               the accident was investigated and safety measures were
               implemented.
             </p>
-          </Tab.Panel>
-          <Tab.Panel>
+          </div>
+        )}
+      </div>
+      <div className="flex flex-col md:hidden">
+        <div
+          className="font-playfair font-black text-xl px-10 py-5 flex flex-row justify-between border border-light"
+          onClick={() => setIsActive10(!isActive10)}
+        >
+          <div className={`${isActive10 ? "text-primary" : "text-dark"}`}>
+            <h2>Saturn V</h2>
+          </div>
+          <div>{isActive10 ? "-" : "+"}</div>
+        </div>
+        {isActive10 && (
+          <div className="border border-t-0 pt-5 p-10">
             <p>
               The Saturn V was a heavy-lift launch vehicle used by NASA&#39;s
               Apollo program during the 1960s and 1970s. It was developed by the
@@ -540,11 +543,11 @@ const GalleryTabs = () => {
               payloads into orbit, and its reliability and success rate made it
               one of the most successful rockets in history.
             </p>
-          </Tab.Panel>
-        </Tab.Panels>
-      </Tab.Group>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
 
-export default GalleryTabs;
+export default Accordion;

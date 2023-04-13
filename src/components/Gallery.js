@@ -12,9 +12,16 @@ import rover from "../../public/space-vehicles/rover.webp";
 import columbia from "../../public/space-vehicles/columbia.webp";
 import saturn from "../../public/space-vehicles/saturn.webp";
 
+const breakpointColumns = {
+  default: 4,
+  1024: 3,
+  748: 2,
+  640: 1
+};
+
 const Gallery = () => {
   return (
-    <Masonry breakpointCols={4} className="flex gap-2">
+    <Masonry breakpointCols={breakpointColumns} className="flex gap-2">
       <div>
         <Image
           src={apollo}
