@@ -173,16 +173,6 @@ const references = () => {
               https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-was-the-saturn-v-58.html
             </p>
           </div>
-          <h2 className="font-playfair font-bold text-2xl">Plan of Work Log</h2>
-          <Link href="/planOfWork.pdf" target="_blank" className="text-primary">
-            <p className="pt-2 pb-6">Download here</p>
-          </Link>
-          <h2 className="font-playfair font-bold text-2xl">
-            Student Copyright Checklist
-          </h2>
-          <Link href="/planOfWork.pdf" target="_blank" className="text-primary">
-            <p className="pt-2 pb-6">Download here</p>
-          </Link>
         </div>
       </main>
     </>

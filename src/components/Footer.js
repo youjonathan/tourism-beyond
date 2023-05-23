@@ -89,10 +89,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col text-center justify-center">
-            <p>Webmaster Team 2111_901</p>
-            <p>Individual #1: 2111-010</p>
-            <p>Individual #2: 2111-009</p>
-            <p>Individual #3: 2111-005</p>
+            <p>Jonathan You</p>
           </div>
         </div>
         <div className="pt-8 text-center">
@@ -167,10 +164,7 @@ const Footer = () => {
           </motion.div>
         </div>
         <div className="flex flex-col text-center justify-center">
-          <p>Webmaster Team 2111_901</p>
-          <p>Individual #1: 2111-010</p>
-          <p>Individual #2: 2111-009</p>
-          <p>Individual #3: 2111-005</p>
+          <p>Jonathan You</p>
         </div>
         <div className="pt-8 text-center">
           <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>

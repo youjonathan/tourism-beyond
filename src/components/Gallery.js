@@ -16,7 +16,7 @@ const breakpointColumns = {
   default: 4,
   1024: 3,
   748: 2,
-  640: 1
+  640: 1,
 };
 
 const Gallery = () => {
